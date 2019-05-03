@@ -1,7 +1,6 @@
 # Uncomment the next line to define a global platform for your project
  platform :ios, '9.0'
 
-source 'git@127.0.0.1:CHNavigationController.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'CheLiang' do
@@ -12,8 +11,13 @@ target 'CheLiang' do
    pod 'CHBaseUtil_WebLog', '~> 0.1.1'
    pod 'CHBaseUtil', '~> 1.0.2'
    pod 'AFNetworking', '~> 3.2.1'
-#   pod 'CHNavigationController', :path => '../proj/CHNavigationController'
-    pod 'SDWebImage', '~> 5.0.2'
-
+   pod 'SDWebImage', '5.0.2'
+   
+   # 本地pod库 二进制化
+   pod 'CHNavigationController', :path => '../pod/CHNavigationController/CHNavigationController-0.1.1/'
+    pod 'LaunchGif', :path => '../pod/LaunchGif/LaunchGif-0.1.5/'
+   # 本地pod库 源码
+   #  pod 'CHNavigationController', :path => '../../CHNavigationController/'
+   #pod 'LaunchGif', :path => '../pod/LaunchGif/'
 
 end

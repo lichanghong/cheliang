@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <CHRouter.h>
 #import "ViewController.h"
+#import <CHNavigationController/CHNavigationController.h>
 
 @interface AppDelegate ()
 
@@ -28,7 +29,6 @@
     self.window.rootViewController = [ViewController new];
     [self.window makeKeyAndVisible];
  
-    // Override point for customization after application launch.
     return YES;
 }
 
