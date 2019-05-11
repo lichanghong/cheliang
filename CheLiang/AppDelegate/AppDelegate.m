@@ -10,6 +10,9 @@
 #import <CHRouter.h>
 #import "ViewController.h"
 #import <CHNavigationController/CHNavigationController.h>
+#import <VZInspector.h>
+#import <CHTabBarController/CHTabBarController.h>
+#import "CHLaunchViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,11 +28,29 @@
 //    [[CHRouter sharedInstance] registerAllModules];    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-//    [self changeWindowRootViewController];
-    self.window.rootViewController = [ViewController new];
+    CHLaunchViewController *launchVC = [[CHLaunchViewController alloc]init];
+    __weak typeof(self) weakSelf = self;
+
+    launchVC.dismiss = ^{
+        [weakSelf launchVCDismiss];
+    };
+    self.window.rootViewController = launchVC;
     [self.window makeKeyAndVisible];
+
+    NSLog(@"nav");
+//    [self changeWindowRootViewController];
+//    self.window.rootViewController = [ViewController new];
+//    [self.window makeKeyAndVisible];
  
+    
     return YES;
+}
+
+- (void)launchVCDismiss {
+    CHTabBarController *tabbarC = [CHTabBarController new];
+    [tabbarC tabBarControllerCls:UIViewController.class NavCls:UINavigationController.class];
+    self.window.rootViewController = tabbarC;
+    [self.window makeKeyAndVisible];
 }
 
 

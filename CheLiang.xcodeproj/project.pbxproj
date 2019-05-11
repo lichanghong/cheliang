@@ -13,9 +13,9 @@
 		950A86E5226A21DE00785130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950A86E4226A21DE00785130 /* Assets.xcassets */; };
 		950A86E8226A21DE00785130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950A86E6226A21DE00785130 /* LaunchScreen.storyboard */; };
 		950A86EB226A21DE00785130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 950A86EA226A21DE00785130 /* main.m */; };
+		95349E302286774900CD152C /* CHLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95349E2F2286774900CD152C /* CHLaunchViewController.m */; };
 		95451885227C8113009BD13C /* launch_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 95451883227C8113009BD13C /* launch_gif.gif */; };
 		95451886227C8113009BD13C /* app_launch_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95451884227C8113009BD13C /* app_launch_sound.mp3 */; };
-		9566020B226B2607006C558C /* CHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566020A226B2607006C558C /* CHTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +29,10 @@
 		950A86E7226A21DE00785130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		950A86E9226A21DE00785130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950A86EA226A21DE00785130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95349E2E2286774900CD152C /* CHLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLaunchViewController.h; sourceTree = "<group>"; };
+		95349E2F2286774900CD152C /* CHLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLaunchViewController.m; sourceTree = "<group>"; };
 		95451883227C8113009BD13C /* launch_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_gif.gif; sourceTree = "<group>"; };
 		95451884227C8113009BD13C /* app_launch_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = app_launch_sound.mp3; sourceTree = "<group>"; };
-		95660209226B2607006C558C /* CHTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTabBarController.h; sourceTree = "<group>"; };
-		9566020A226B2607006C558C /* CHTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTabBarController.m; sourceTree = "<group>"; };
 		D53C8A06288742BE3BC1F496 /* libPods-CheLiang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheLiang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96D6E63CF21B78E3E0357FC /* Pods-CheLiang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheLiang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheLiang/Pods-CheLiang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				95451887227C813E009BD13C /* launch */,
-				95660208226B25BC006C558C /* TabViewController */,
 				950A86DB226A21DE00785130 /* AppDelegate.h */,
 				950A86DC226A21DE00785130 /* AppDelegate.m */,
 				950A86DE226A21DE00785130 /* ViewController.h */,
@@ -113,17 +112,10 @@
 			children = (
 				95451884227C8113009BD13C /* app_launch_sound.mp3 */,
 				95451883227C8113009BD13C /* launch_gif.gif */,
+				95349E2E2286774900CD152C /* CHLaunchViewController.h */,
+				95349E2F2286774900CD152C /* CHLaunchViewController.m */,
 			);
 			path = launch;
-			sourceTree = "<group>";
-		};
-		95660208226B25BC006C558C /* TabViewController */ = {
-			isa = PBXGroup;
-			children = (
-				95660209226B2607006C558C /* CHTabBarController.h */,
-				9566020A226B2607006C558C /* CHTabBarController.m */,
-			);
-			path = TabViewController;
 			sourceTree = "<group>";
 		};
 		D7CF967D390DE6FF179BDACB /* Pods */ = {
@@ -146,6 +138,7 @@
 				950A86D4226A21DE00785130 /* Sources */,
 				950A86D5226A21DE00785130 /* Frameworks */,
 				950A86D6226A21DE00785130 /* Resources */,
+				BF51F7048222D68DD5621224 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,6 +218,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BF51F7048222D68DD5621224 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheLiang/Pods-CheLiang-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/CHTabBarController/CHTabBarController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/LaunchGif/LaunchGif.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CHTabBarController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LaunchGif.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheLiang/Pods-CheLiang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,7 +251,7 @@
 			files = (
 				950A86E0226A21DE00785130 /* ViewController.m in Sources */,
 				950A86EB226A21DE00785130 /* main.m in Sources */,
-				9566020B226B2607006C558C /* CHTabBarController.m in Sources */,
+				95349E302286774900CD152C /* CHLaunchViewController.m in Sources */,
 				950A86DD226A21DE00785130 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,10 +32,11 @@ PODS:
   - CHBaseUtil/VC (1.0.8)
   - CHBaseUtil_WebLog (0.1.1)
   - CHNavigationController (0.1.1)
+  - CHTabBarController (0.1.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - LaunchGif (0.1.5)
+  - LaunchGif (0.1.7)
   - SDWebImage (5.0.2):
     - SDWebImage/Core (= 5.0.2)
   - SDWebImage/Core (5.0.2)
@@ -45,7 +46,8 @@ DEPENDENCIES:
   - CHBaseUtil (~> 1.0.8)
   - CHBaseUtil_WebLog (~> 0.1.1)
   - CHNavigationController (from `../pod/CHNavigationController/CHNavigationController-0.1.1/`)
-  - LaunchGif (from `../pod/LaunchGif/LaunchGif-0.1.5/`)
+  - CHTabBarController (from `../pod/CHTabBarController`)
+  - LaunchGif (from `../pod/LaunchGif/LaunchGif-0.1.7/`)
   - SDWebImage (= 5.0.2)
 
 SPEC REPOS:
@@ -59,18 +61,21 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   CHNavigationController:
     :path: "../pod/CHNavigationController/CHNavigationController-0.1.1/"
+  CHTabBarController:
+    :path: "../pod/CHTabBarController"
   LaunchGif:
-    :path: "../pod/LaunchGif/LaunchGif-0.1.5/"
+    :path: "../pod/LaunchGif/LaunchGif-0.1.7/"
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CHBaseUtil: 1531a0adc0dfbd1c892d7321d8643bafd3e7a5c1
   CHBaseUtil_WebLog: f01af0a2ea16516e671cfba56b1b33ea3ecc4484
   CHNavigationController: f69b530a66cb60364e02bae0aef5c74a33b891ea
+  CHTabBarController: 20bc9f966d1b634b4332b504768f51b44a157c4e
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  LaunchGif: 395255ad5c36ea340da6e4750290a012be0f1819
+  LaunchGif: c34530fc288bac04a85b2d4bbc54a14af90f8e81
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
 
-PODFILE CHECKSUM: dbde3735b39c664f30082272f863d229d8ee4606
+PODFILE CHECKSUM: 8f679bb0a6d9e328050df57e808eecf76028c4d3
 
 COCOAPODS: 1.6.1
