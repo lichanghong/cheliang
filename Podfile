@@ -9,7 +9,7 @@ target 'CheLiang' do
 
   # Pods for CheLiang
    pod 'CHBaseUtil_WebLog', '~> 0.1.1'
-   pod 'CHBaseUtil', '~> 1.0.2'
+   pod 'CHBaseUtil', '~> 1.0.8'
    pod 'AFNetworking', '~> 3.2.1'
    pod 'SDWebImage', '5.0.2'
    

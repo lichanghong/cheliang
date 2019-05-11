@@ -22,7 +22,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[CHRouter sharedInstance] registerAllModules];    
+//    [[CHRouter sharedInstance] registerAllModules];    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 //    [self changeWindowRootViewController];
