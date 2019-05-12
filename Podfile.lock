@@ -40,6 +40,7 @@ PODS:
   - SDWebImage (5.0.2):
     - SDWebImage/Core (= 5.0.2)
   - SDWebImage/Core (5.0.2)
+  - WechatOpenSDK (1.8.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - CHTabBarController (from `../pod/CHTabBarController`)
   - LaunchGif (from `../pod/LaunchGif/LaunchGif-0.1.7/`)
   - SDWebImage (= 5.0.2)
+  - WechatOpenSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -57,6 +59,7 @@ SPEC REPOS:
     - CHBaseUtil_WebLog
     - FMDB
     - SDWebImage
+    - WechatOpenSDK
 
 EXTERNAL SOURCES:
   CHNavigationController:
@@ -75,7 +78,8 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   LaunchGif: c34530fc288bac04a85b2d4bbc54a14af90f8e81
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
 
-PODFILE CHECKSUM: 8f679bb0a6d9e328050df57e808eecf76028c4d3
+PODFILE CHECKSUM: 6b2a82da38002aecd7844c9b76d7c82b62a050ff
 
 COCOAPODS: 1.6.1

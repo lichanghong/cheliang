@@ -12,7 +12,8 @@ target 'CheLiang' do
    pod 'CHBaseUtil', '~> 1.0.8'
    pod 'AFNetworking', '~> 3.2.1'
    pod 'SDWebImage', '5.0.2'
-   
+   pod 'WechatOpenSDK'
+
    # 本地pod库 二进制化
    pod 'CHNavigationController', :path => '../pod/CHNavigationController/CHNavigationController-0.1.1/'
     pod 'LaunchGif', :path => '../pod/LaunchGif/LaunchGif-0.1.7/'

@@ -13,6 +13,10 @@
 		950A86E5226A21DE00785130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950A86E4226A21DE00785130 /* Assets.xcassets */; };
 		950A86E8226A21DE00785130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950A86E6226A21DE00785130 /* LaunchScreen.storyboard */; };
 		950A86EB226A21DE00785130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 950A86EA226A21DE00785130 /* main.m */; };
+		95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BDF228811FB00348678 /* CHWeChatManager.m */; };
+		95219BE3228811FC00348678 /* CHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE0228811FB00348678 /* CHLoginManager.m */; };
+		95219BE9228813A100348678 /* CHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE8228813A100348678 /* CHBaseViewController.m */; };
+		95219BEC228813B400348678 /* CHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BEB228813B400348678 /* CHLoginViewController.m */; };
 		95349E302286774900CD152C /* CHLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95349E2F2286774900CD152C /* CHLaunchViewController.m */; };
 		95451885227C8113009BD13C /* launch_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 95451883227C8113009BD13C /* launch_gif.gif */; };
 		95451886227C8113009BD13C /* app_launch_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95451884227C8113009BD13C /* app_launch_sound.mp3 */; };
@@ -29,6 +33,14 @@
 		950A86E7226A21DE00785130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		950A86E9226A21DE00785130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950A86EA226A21DE00785130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95219BDE228811FB00348678 /* CHWeChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHWeChatManager.h; sourceTree = "<group>"; };
+		95219BDF228811FB00348678 /* CHWeChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHWeChatManager.m; sourceTree = "<group>"; };
+		95219BE0228811FB00348678 /* CHLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLoginManager.m; sourceTree = "<group>"; };
+		95219BE1228811FC00348678 /* CHLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLoginManager.h; sourceTree = "<group>"; };
+		95219BE7228813A100348678 /* CHBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHBaseViewController.h; sourceTree = "<group>"; };
+		95219BE8228813A100348678 /* CHBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHBaseViewController.m; sourceTree = "<group>"; };
+		95219BEA228813B400348678 /* CHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLoginViewController.h; sourceTree = "<group>"; };
+		95219BEB228813B400348678 /* CHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLoginViewController.m; sourceTree = "<group>"; };
 		95349E2E2286774900CD152C /* CHLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLaunchViewController.h; sourceTree = "<group>"; };
 		95349E2F2286774900CD152C /* CHLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLaunchViewController.m; sourceTree = "<group>"; };
 		95451883227C8113009BD13C /* launch_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_gif.gif; sourceTree = "<group>"; };
@@ -78,6 +90,7 @@
 		950A86DA226A21DE00785130 /* CheLiang */ = {
 			isa = PBXGroup;
 			children = (
+				95219BE62288138E00348678 /* Basic */,
 				950A86F2226B1EDD00785130 /* Home */,
 				950A86F1226B1EC400785130 /* AppDelegate */,
 			);
@@ -87,6 +100,7 @@
 		950A86F1226B1EC400785130 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				95219BDD228811E800348678 /* Login */,
 				95451887227C813E009BD13C /* launch */,
 				950A86DB226A21DE00785130 /* AppDelegate.h */,
 				950A86DC226A21DE00785130 /* AppDelegate.m */,
@@ -105,6 +119,44 @@
 			children = (
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		95219BDD228811E800348678 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95219BE52288135B00348678 /* VC */,
+				95219BE42288135000348678 /* Manager */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95219BE42288135000348678 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				95219BE1228811FC00348678 /* CHLoginManager.h */,
+				95219BE0228811FB00348678 /* CHLoginManager.m */,
+				95219BDE228811FB00348678 /* CHWeChatManager.h */,
+				95219BDF228811FB00348678 /* CHWeChatManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		95219BE52288135B00348678 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				95219BEA228813B400348678 /* CHLoginViewController.h */,
+				95219BEB228813B400348678 /* CHLoginViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		95219BE62288138E00348678 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				95219BE7228813A100348678 /* CHBaseViewController.h */,
+				95219BE8228813A100348678 /* CHBaseViewController.m */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 		95451887227C813E009BD13C /* launch */ = {
@@ -249,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95219BE3228811FC00348678 /* CHLoginManager.m in Sources */,
 				950A86E0226A21DE00785130 /* ViewController.m in Sources */,
+				95219BE9228813A100348678 /* CHBaseViewController.m in Sources */,
+				95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */,
 				950A86EB226A21DE00785130 /* main.m in Sources */,
+				95219BEC228813B400348678 /* CHLoginViewController.m in Sources */,
 				95349E302286774900CD152C /* CHLaunchViewController.m in Sources */,
 				950A86DD226A21DE00785130 /* AppDelegate.m in Sources */,
 			);
@@ -391,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86455TAXDJ;
 				INFOPLIST_FILE = "$(SRCROOT)/CheLiang/AppDelegate/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86455TAXDJ;
 				INFOPLIST_FILE = "$(SRCROOT)/CheLiang/AppDelegate/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

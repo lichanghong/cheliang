@@ -13,13 +13,16 @@
 #import <VZInspector.h>
 #import <CHTabBarController/CHTabBarController.h>
 #import "CHLaunchViewController.h"
+#import "CHLoginManager.h"
+#import "CHLoginViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
- + (AppDelegate *)sharedDelegate
+
++ (AppDelegate *)sharedDelegate
 {
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
 }
@@ -38,11 +41,6 @@
     [self.window makeKeyAndVisible];
 
     NSLog(@"nav");
-//    [self changeWindowRootViewController];
-//    self.window.rootViewController = [ViewController new];
-//    [self.window makeKeyAndVisible];
- 
-    
     return YES;
 }
 
@@ -51,8 +49,23 @@
     [tabbarC tabBarControllerCls:UIViewController.class NavCls:UINavigationController.class];
     self.window.rootViewController = tabbarC;
     [self.window makeKeyAndVisible];
+    
+    if (YES) { //！logined
+        CHLoginViewController *vc  = [[CHLoginViewController alloc]init];
+        [self.window.rootViewController presentViewController:vc animated:NO completion:^{
+                                          
+                                      }];
+    }
+    
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [[CHLoginManager sharedInstance] handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [[CHLoginManager sharedInstance] handleOpenURL:url];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
