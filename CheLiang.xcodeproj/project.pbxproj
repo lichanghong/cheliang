@@ -13,6 +13,7 @@
 		950A86E5226A21DE00785130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950A86E4226A21DE00785130 /* Assets.xcassets */; };
 		950A86E8226A21DE00785130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950A86E6226A21DE00785130 /* LaunchScreen.storyboard */; };
 		950A86EB226A21DE00785130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 950A86EA226A21DE00785130 /* main.m */; };
+		952112D722A179EF00F31FB7 /* Login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952112D622A179EF00F31FB7 /* Login.xcassets */; };
 		95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BDF228811FB00348678 /* CHWeChatManager.m */; };
 		95219BE3228811FC00348678 /* CHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE0228811FB00348678 /* CHLoginManager.m */; };
 		95219BE9228813A100348678 /* CHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE8228813A100348678 /* CHBaseViewController.m */; };
@@ -33,6 +34,7 @@
 		950A86E7226A21DE00785130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		950A86E9226A21DE00785130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950A86EA226A21DE00785130 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		952112D622A179EF00F31FB7 /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
 		95219BDE228811FB00348678 /* CHWeChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHWeChatManager.h; sourceTree = "<group>"; };
 		95219BDF228811FB00348678 /* CHWeChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHWeChatManager.m; sourceTree = "<group>"; };
 		95219BE0228811FB00348678 /* CHLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLoginManager.m; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				95219BE52288135B00348678 /* VC */,
 				95219BE42288135000348678 /* Manager */,
+				952112D622A179EF00F31FB7 /* Login.xcassets */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95451885227C8113009BD13C /* launch_gif.gif in Resources */,
+				952112D722A179EF00F31FB7 /* Login.xcassets in Resources */,
 				95451886227C8113009BD13C /* app_launch_sound.mp3 in Resources */,
 				950A86E8226A21DE00785130 /* LaunchScreen.storyboard in Resources */,
 				950A86E5226A21DE00785130 /* Assets.xcassets in Resources */,
