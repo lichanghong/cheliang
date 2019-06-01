@@ -14,7 +14,8 @@ NSString * const WXAppSecret = @"24999d4a75a3566b6161928821c55b27";
 
 @implementation CHWeChatManager
 
-+ (void)initialize
+
+- (void)registerApp
 {
     //微信初始化
     [WXApi registerApp:WXAppId];

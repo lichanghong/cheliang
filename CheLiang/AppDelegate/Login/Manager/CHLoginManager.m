@@ -20,6 +20,7 @@ static CHLoginManager *sharedInstance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         sharedInstance = [[self alloc] init];
+        [[CHWeChatManager sharedInstance] registerApp];
     });
     return sharedInstance;
 }
@@ -32,6 +33,10 @@ static CHLoginManager *sharedInstance = nil;
                 [[CHWeChatManager sharedInstance] login];
             }
             break;
+        case QQLoginType:{
+            [[CHWeChatManager sharedInstance] login];
+        }
+            break;
         default:
             break;
     }
@@ -39,6 +44,11 @@ static CHLoginManager *sharedInstance = nil;
 
 -(BOOL)handleOpenURL:(NSURL*)url {
     return [WXApi handleOpenURL:url delegate:[CHWeChatManager sharedInstance]];
+}
+
+- (BOOL)isWXAppInstalled
+{
+    return [WXApi isWXAppInstalled];
 }
 
 @end

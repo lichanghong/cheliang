@@ -8,6 +8,7 @@
 
 #import "CHLoginViewController.h"
 #import <UIView+CHFrame.h>
+#import "CHLoginManager.h"
 
 @interface CHLoginViewController ()
 
@@ -32,10 +33,13 @@
     
     [self.view addSubview:self.iconImageView];
     [self.view addSubview:self.carBgImageView];
-    [self.view addSubview:self.loginBtn1];
-    [self.view addSubview:self.loginBtn2];
-    [self.view addSubview:self.loginBtn3];
-
+    if ([CHLoginManager sharedInstance].isWXAppInstalled) {
+        [self.view addSubview:self.loginBtn1];
+        [self.view addSubview:self.loginBtn2];
+    }
+    else{
+        [self.view addSubview:self.loginBtn3];
+    }
      [self refreshFrame];
     // Do any additional setup after loading the view.
 }
@@ -43,7 +47,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    BOOL installedWX = NO; //没有安装微信
+    BOOL installedWX = [CHLoginManager sharedInstance].isWXAppInstalled; //没有安装微信
     [self.loginBtn1 setHidden:!installedWX];
     [self.loginBtn2 setHidden:!installedWX];
     [self.loginBtn3 setHidden:installedWX];
@@ -58,17 +62,19 @@
 }
 
 - (void)handleAction:(id)sender {
-    if (sender == _loginBtn1) {
-        
-    }
-    else if (sender == _loginBtn2 || sender == _loginBtn3)
-    {
-        
-    }
-    else
-    {
+//    if (sender == _loginBtn1) {
+//        [[CHLoginManager sharedInstance] appLogin:WeChatLoginType withUserName:nil withPassword:nil];;
+//    }
+//    else if (sender == _loginBtn2 || sender == _loginBtn3)
+//    {
+//        [[CHLoginManager sharedInstance] appLogin:QQLoginType withUserName:nil withPassword:nil];;
+//    }
+//    else
+//    {
         [self dismissViewControllerAnimated:NO completion:nil];
-    }
+//    }
+    
+    
 }
 
 - (void)refreshFrame {

@@ -47,6 +47,7 @@ typedef enum {
  */
 + (instancetype)sharedInstance;
 
++ (void)initShareSDK; //初始化分享
 /**
  *  登录,支持三方及新氧
  *
@@ -63,6 +64,9 @@ typedef enum {
  *
  */
 -(BOOL)handleOpenURL:(NSURL*)url;
+
+
+- (BOOL)isWXAppInstalled;
 
 
 @end

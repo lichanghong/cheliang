@@ -15,6 +15,8 @@
 - (BOOL)isWxAppInstalled;
 + (instancetype)sharedInstance;
 
+- (void)registerApp;
+
 /**
  *  微信登录
  */
