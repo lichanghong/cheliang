@@ -15,6 +15,8 @@
 		950A86EB226A21DE00785130 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 950A86EA226A21DE00785130 /* main.m */; };
 		952112D722A179EF00F31FB7 /* Login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952112D622A179EF00F31FB7 /* Login.xcassets */; };
 		952112DE22A20A9900F31FB7 /* CHUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 952112DD22A20A9900F31FB7 /* CHUserManager.m */; };
+		952112E222A256FC00F31FB7 /* CHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952112E122A256FC00F31FB7 /* CHHomeViewController.m */; };
+		952112E522A2571C00F31FB7 /* CHPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952112E422A2571C00F31FB7 /* CHPurchaseViewController.m */; };
 		95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BDF228811FB00348678 /* CHWeChatManager.m */; };
 		95219BE3228811FC00348678 /* CHLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE0228811FB00348678 /* CHLoginManager.m */; };
 		95219BE9228813A100348678 /* CHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE8228813A100348678 /* CHBaseViewController.m */; };
@@ -38,6 +40,10 @@
 		952112D622A179EF00F31FB7 /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
 		952112DC22A20A9900F31FB7 /* CHUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHUserManager.h; sourceTree = "<group>"; };
 		952112DD22A20A9900F31FB7 /* CHUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHUserManager.m; sourceTree = "<group>"; };
+		952112E022A256FC00F31FB7 /* CHHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHomeViewController.h; sourceTree = "<group>"; };
+		952112E122A256FC00F31FB7 /* CHHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHomeViewController.m; sourceTree = "<group>"; };
+		952112E322A2571C00F31FB7 /* CHPurchaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHPurchaseViewController.h; sourceTree = "<group>"; };
+		952112E422A2571C00F31FB7 /* CHPurchaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHPurchaseViewController.m; sourceTree = "<group>"; };
 		95219BDE228811FB00348678 /* CHWeChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHWeChatManager.h; sourceTree = "<group>"; };
 		95219BDF228811FB00348678 /* CHWeChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHWeChatManager.m; sourceTree = "<group>"; };
 		95219BE0228811FB00348678 /* CHLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLoginManager.m; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 		950A86DA226A21DE00785130 /* CheLiang */ = {
 			isa = PBXGroup;
 			children = (
+				952112DF22A256E400F31FB7 /* 购物 */,
 				95219BE62288138E00348678 /* Basic */,
 				950A86F2226B1EDD00785130 /* Home */,
 				950A86F1226B1EC400785130 /* AppDelegate */,
@@ -122,6 +129,8 @@
 		950A86F2226B1EDD00785130 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				952112E022A256FC00F31FB7 /* CHHomeViewController.h */,
+				952112E122A256FC00F31FB7 /* CHHomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -133,6 +142,15 @@
 				952112DD22A20A9900F31FB7 /* CHUserManager.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		952112DF22A256E400F31FB7 /* 购物 */ = {
+			isa = PBXGroup;
+			children = (
+				952112E322A2571C00F31FB7 /* CHPurchaseViewController.h */,
+				952112E422A2571C00F31FB7 /* CHPurchaseViewController.m */,
+			);
+			path = "购物";
 			sourceTree = "<group>";
 		};
 		95219BDD228811E800348678 /* Login */ = {
@@ -322,10 +340,12 @@
 				950A86E0226A21DE00785130 /* ViewController.m in Sources */,
 				95219BE9228813A100348678 /* CHBaseViewController.m in Sources */,
 				95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */,
+				952112E522A2571C00F31FB7 /* CHPurchaseViewController.m in Sources */,
 				952112DE22A20A9900F31FB7 /* CHUserManager.m in Sources */,
 				950A86EB226A21DE00785130 /* main.m in Sources */,
 				95219BEC228813B400348678 /* CHLoginViewController.m in Sources */,
 				95349E302286774900CD152C /* CHLaunchViewController.m in Sources */,
+				952112E222A256FC00F31FB7 /* CHHomeViewController.m in Sources */,
 				950A86DD226A21DE00785130 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

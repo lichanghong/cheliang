@@ -15,6 +15,9 @@
 #import "CHLaunchViewController.h"
 #import "CHLoginManager.h"
 #import "CHLoginViewController.h"
+#import "CHUserManager.h"
+#import "CHHomeViewController.h"
+#import "CHPurchaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -46,14 +49,15 @@
 
 - (void)launchVCDismiss {
     CHTabBarController *tabbarC = [CHTabBarController new];
-    [tabbarC tabBarControllerCls:UIViewController.class NavCls:UINavigationController.class];
+    [tabbarC tabBarControllerCls:@[CHPurchaseViewController.class,
+                                   CHBaseViewController.class,
+                                   CHHomeViewController.class] NavCls:UINavigationController.class];
     self.window.rootViewController = tabbarC;
     [self.window makeKeyAndVisible];
     
-    if (YES) { //！logined
+    if ([[CHUserManager sharedInstance] hasLoginedIn]) { //！logined
         CHLoginViewController *vc  = [[CHLoginViewController alloc]init];
         [self.window.rootViewController presentViewController:vc animated:NO completion:^{
-                                          
                                       }];
     }
     
