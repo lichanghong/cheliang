@@ -34,7 +34,7 @@ PODS:
   - ETXMNetworking (1.1.0):
     - ETAFNetworking
   - LaunchGif (0.1.7)
-  - MNet (0.1.6):
+  - MNet (0.1.7):
     - ETEntity
     - ETNetwork
     - ETUserDefaults
@@ -98,10 +98,10 @@ SPEC CHECKSUMS:
   ETUserDefaults: 7d3826bebd71a3ba334c8a9e9ac54a0768591f32
   ETXMNetworking: ee0e43441ea7f1749f00d187b2217ed96534fe90
   LaunchGif: c34530fc288bac04a85b2d4bbc54a14af90f8e81
-  MNet: fda3e56a92e4eea09779dc82f156eb3e372e2878
+  MNet: 315c318070b64ce26d565d7ea741e413dd4ff0df
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 37ba27138981fba9b3104b95494ced17b64b00f3
+PODFILE CHECKSUM: 203a313c66f398dd44a01be343a4406946cb7769
 
 COCOAPODS: 1.7.2
