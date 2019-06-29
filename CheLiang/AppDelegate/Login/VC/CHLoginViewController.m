@@ -7,7 +7,7 @@
 //  参考宽度 375
 
 #import "CHLoginViewController.h"
-#import <UIView+CHFrame.h>
+#import <ETDevice/ETDevice.h>
 #import "CHLoginManager.h"
 
 @interface CHLoginViewController ()
@@ -52,7 +52,7 @@
     [self.loginBtn2 setHidden:!installedWX];
     [self.loginBtn3 setHidden:installedWX];
     
-    CGFloat bottom = KScreenHeight-148;
+    CGFloat bottom = kScreenHeight()-148;
     __weak typeof(self)wself = self;
     [UIView animateWithDuration:1 animations:^{
         wself.loginBtn1.bottom = bottom;
@@ -79,8 +79,8 @@
 
 - (void)refreshFrame {
     self.iconImageView.centerX = self.view.centerX;
-    self.carBgImageView.bottom = KScreenHeight-47;
-    CGFloat bottom = KScreenHeight-148;
+    self.carBgImageView.bottom = kScreenHeight()-47;
+    CGFloat bottom = kScreenHeight()-148;
     self.loginBtn1.bottom = bottom + 50;
     self.loginBtn2.bottom = bottom + 50;
     self.loginBtn3.bottom = bottom + 50;
@@ -89,7 +89,7 @@
 - (UIImageView *)iconImageView
 {
     if (!_iconImageView) {
-        UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, KScreenHeight*109/667.0, 167*ratio,  167*ratio)];
+        UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, kScreenHeight()*109/667.0, 167*ratio,  167*ratio)];
         imageview.image = [UIImage imageNamed:@"logo_white"];
         _iconImageView = imageview;
     }
@@ -121,7 +121,7 @@
 - (UIButton *)loginBtn2
 {
     if (!_loginBtn2) {
-        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(KScreenWidth-43*ratio-128*ratio, 0, 128*ratio, 43*ratio)];
+        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth()-43*ratio-128*ratio, 0, 128*ratio, 43*ratio)];
         [btn setImage:[UIImage imageNamed:@"log_wechat"] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(handleAction:) forControlEvents:UIControlEventTouchUpInside];
         _loginBtn2 = btn;
@@ -131,7 +131,7 @@
 - (UIButton *)loginBtn3
 {
     if (!_loginBtn3) {
-        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(43, 0, KScreenWidth-43*2, 43*ratio)];
+        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(43, 0, kScreenWidth()-43*2, 43*ratio)];
         [btn setImage:[UIImage imageNamed:@"log_qq2"] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(handleAction:) forControlEvents:UIControlEventTouchUpInside];
         _loginBtn3 = btn;

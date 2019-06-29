@@ -1,65 +1,78 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
-    - AFNetworking/NSURLSession
-  - CHBaseUtil (1.0.8):
-    - CHBaseUtil/FLEXInspector (= 1.0.8)
-    - CHBaseUtil/JKDBModel (= 1.0.8)
-    - CHBaseUtil/Router (= 1.0.8)
-    - CHBaseUtil/Safe (= 1.0.8)
-    - CHBaseUtil/UI (= 1.0.8)
-    - CHBaseUtil/Util (= 1.0.8)
-    - CHBaseUtil/VC (= 1.0.8)
-  - CHBaseUtil/FLEXInspector (1.0.8)
-  - CHBaseUtil/JKDBModel (1.0.8):
-    - FMDB (~> 2.7.2)
-  - CHBaseUtil/Router (1.0.8)
-  - CHBaseUtil/Safe (1.0.8)
-  - CHBaseUtil/UI (1.0.8)
-  - CHBaseUtil/Util (1.0.8)
-  - CHBaseUtil/VC (1.0.8)
-  - CHBaseUtil_WebLog (0.1.1)
   - CHNavigationController (0.1.1)
   - CHTabBarController (0.1.0)
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
+  - ETAFNetworking (3.2.5):
+    - ETAFNetworking/NSURLSession (= 3.2.5)
+    - ETAFNetworking/Reachability (= 3.2.5)
+    - ETAFNetworking/Security (= 3.2.5)
+    - ETAFNetworking/Serialization (= 3.2.5)
+    - ETAFNetworking/UIKit (= 3.2.5)
+  - ETAFNetworking/NSURLSession (3.2.5):
+    - ETAFNetworking/Reachability
+    - ETAFNetworking/Security
+    - ETAFNetworking/Serialization
+  - ETAFNetworking/Reachability (3.2.5)
+  - ETAFNetworking/Security (3.2.5)
+  - ETAFNetworking/Serialization (3.2.5)
+  - ETAFNetworking/UIKit (3.2.5):
+    - ETAFNetworking/NSURLSession
+  - ETColor (0.1.0)
+  - ETDevice (0.1.1)
+  - ETEntity (0.1.1):
+    - YYModel (= 1.0.4)
+  - ETFont (0.1.0)
+  - ETNetwork (0.1.5):
+    - ETSafe
+    - ETXMNetworking
+  - ETSafe (0.1.0)
+  - ETSDWebImage (5.0.2):
+    - ETSDWebImage/Core (= 5.0.2)
+  - ETSDWebImage/Core (5.0.2)
+  - ETString (0.1.1)
+  - ETTableViewCell (0.1.0)
+  - ETUserDefaults (0.1.1)
+  - ETXMNetworking (1.1.0):
+    - ETAFNetworking
   - LaunchGif (0.1.7)
-  - SDWebImage (5.0.2):
-    - SDWebImage/Core (= 5.0.2)
-  - SDWebImage/Core (5.0.2)
+  - MNet (0.1.6):
+    - ETEntity
+    - ETNetwork
+    - ETUserDefaults
   - WechatOpenSDK (1.8.4)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.2.1)
-  - CHBaseUtil (~> 1.0.8)
-  - CHBaseUtil_WebLog (~> 0.1.1)
   - CHNavigationController (from `../pod/CHNavigationController/CHNavigationController-0.1.1/`)
   - CHTabBarController (from `../pod/CHTabBarController`)
+  - ETColor
+  - ETDevice
+  - ETFont
+  - ETSDWebImage
+  - ETString
+  - ETTableViewCell
   - LaunchGif (from `../pod/LaunchGif/LaunchGif-0.1.7/`)
-  - SDWebImage (= 5.0.2)
+  - MNet
   - WechatOpenSDK
 
 SPEC REPOS:
+  http://192.168.199.182:8081/lichanghong/ET.git:
+    - ETAFNetworking
+    - ETColor
+    - ETDevice
+    - ETEntity
+    - ETFont
+    - ETNetwork
+    - ETSafe
+    - ETSDWebImage
+    - ETString
+    - ETTableViewCell
+    - ETUserDefaults
+    - ETXMNetworking
+  http://192.168.199.182:8081/lichanghong/M.git:
+    - MNet
   https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - CHBaseUtil
-    - CHBaseUtil_WebLog
-    - FMDB
-    - SDWebImage
     - WechatOpenSDK
+    - YYModel
 
 EXTERNAL SOURCES:
   CHNavigationController:
@@ -70,16 +83,25 @@ EXTERNAL SOURCES:
     :path: "../pod/LaunchGif/LaunchGif-0.1.7/"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  CHBaseUtil: 1531a0adc0dfbd1c892d7321d8643bafd3e7a5c1
-  CHBaseUtil_WebLog: f01af0a2ea16516e671cfba56b1b33ea3ecc4484
   CHNavigationController: f69b530a66cb60364e02bae0aef5c74a33b891ea
   CHTabBarController: 20bc9f966d1b634b4332b504768f51b44a157c4e
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  ETAFNetworking: 80bf2ef6196273ce70046ad600e504c4f1d4b99e
+  ETColor: 1ca68c7a266733eb8fb65924c428ce200778e30f
+  ETDevice: c27cd1618b94ea8a5a261a5fd6e99acc8e4154c5
+  ETEntity: ecd5932de041042a198bc30af7ff6859fa70008f
+  ETFont: e211cee05390e6cf93b8f035423e2063196c8816
+  ETNetwork: dea0154dc2765ac9a3b500ac5f7005a6946c151e
+  ETSafe: 026ffa41744be8183a78fe7753b75c7131982fde
+  ETSDWebImage: 80f53c00dc046d045881ba7247b034305273d384
+  ETString: 34990f7eaa898cf6acdd25708b775522eb14a57e
+  ETTableViewCell: 7fc9ce27c2d7c0d3c0513b3cb41ce6f9c8403ccb
+  ETUserDefaults: 7d3826bebd71a3ba334c8a9e9ac54a0768591f32
+  ETXMNetworking: ee0e43441ea7f1749f00d187b2217ed96534fe90
   LaunchGif: c34530fc288bac04a85b2d4bbc54a14af90f8e81
-  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  MNet: fda3e56a92e4eea09779dc82f156eb3e372e2878
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2d65e4c9306af13508b75357c67c240912786d79
+PODFILE CHECKSUM: 37ba27138981fba9b3104b95494ced17b64b00f3
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.2

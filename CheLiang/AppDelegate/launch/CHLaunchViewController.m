@@ -8,7 +8,7 @@
 
 #import "CHLaunchViewController.h"
 #import <LaunchGif/CLAppLaunchView.h>
-#import <UIImage+GIF.h>
+#import <ETSDWebImage/UIImage+GIF.h>
 
 @interface CHLaunchViewController ()<CLAppLaunchViewDelegate>
 

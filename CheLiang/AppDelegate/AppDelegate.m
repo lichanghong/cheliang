@@ -7,10 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <CHRouter.h>
 #import "ViewController.h"
 #import <CHNavigationController/CHNavigationController.h>
-#import <VZInspector.h>
 #import <CHTabBarController/CHTabBarController.h>
 #import "CHLaunchViewController.h"
 #import "CHLoginManager.h"
@@ -36,22 +34,22 @@
     self.window.backgroundColor = [UIColor whiteColor];
     CHLaunchViewController *launchVC = [[CHLaunchViewController alloc]init];
     __weak typeof(self) weakSelf = self;
-
-    launchVC.dismiss = ^{
+//
+//    launchVC.dismiss = ^{
         [weakSelf launchVCDismiss];
-    };
-    self.window.rootViewController = launchVC;
-    [self.window makeKeyAndVisible];
-
-    NSLog(@"nav");
+//    };
+//    self.window.rootViewController = launchVC;
+//    [self.window makeKeyAndVisible];
+//
+//    NSLog(@"nav");
     return YES;
 }
 
 - (void)launchVCDismiss {
     CHTabBarController *tabbarC = [CHTabBarController new];
-    [tabbarC tabBarControllerCls:@[CHPurchaseViewController.class,
+    [tabbarC tabBarControllerCls:@[CHHomeViewController.class,
                                    CHBaseViewController.class,
-                                   CHHomeViewController.class] NavCls:UINavigationController.class];
+                                   CHPurchaseViewController.class] NavCls:UINavigationController.class];
     self.window.rootViewController = tabbarC;
     [self.window makeKeyAndVisible];
     

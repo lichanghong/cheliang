@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,8 +22,11 @@
 		95219BE9228813A100348678 /* CHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BE8228813A100348678 /* CHBaseViewController.m */; };
 		95219BEC228813B400348678 /* CHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95219BEB228813B400348678 /* CHLoginViewController.m */; };
 		95349E302286774900CD152C /* CHLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95349E2F2286774900CD152C /* CHLaunchViewController.m */; };
+		953A4F3022BF659C005F6826 /* HomeMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953A4F2F22BF659C005F6826 /* HomeMedia.xcassets */; };
+		953A4F3422BF65FD005F6826 /* CHHomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 953A4F3322BF65FD005F6826 /* CHHomeNavView.m */; };
 		95451885227C8113009BD13C /* launch_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 95451883227C8113009BD13C /* launch_gif.gif */; };
 		95451886227C8113009BD13C /* app_launch_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95451884227C8113009BD13C /* app_launch_sound.mp3 */; };
+		958EAEEC22C78EC1007BAB43 /* CHHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 958EAEEB22C78EC1007BAB43 /* CHHomeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +57,13 @@
 		95219BEB228813B400348678 /* CHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLoginViewController.m; sourceTree = "<group>"; };
 		95349E2E2286774900CD152C /* CHLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHLaunchViewController.h; sourceTree = "<group>"; };
 		95349E2F2286774900CD152C /* CHLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHLaunchViewController.m; sourceTree = "<group>"; };
+		953A4F2F22BF659C005F6826 /* HomeMedia.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeMedia.xcassets; sourceTree = "<group>"; };
+		953A4F3222BF65FD005F6826 /* CHHomeNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHomeNavView.h; sourceTree = "<group>"; };
+		953A4F3322BF65FD005F6826 /* CHHomeNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHomeNavView.m; sourceTree = "<group>"; };
 		95451883227C8113009BD13C /* launch_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_gif.gif; sourceTree = "<group>"; };
 		95451884227C8113009BD13C /* app_launch_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = app_launch_sound.mp3; sourceTree = "<group>"; };
+		958EAEEA22C78EC1007BAB43 /* CHHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHomeTableViewCell.h; sourceTree = "<group>"; };
+		958EAEEB22C78EC1007BAB43 /* CHHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHomeTableViewCell.m; sourceTree = "<group>"; };
 		D53C8A06288742BE3BC1F496 /* libPods-CheLiang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheLiang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96D6E63CF21B78E3E0357FC /* Pods-CheLiang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheLiang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheLiang/Pods-CheLiang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +109,7 @@
 		950A86DA226A21DE00785130 /* CheLiang */ = {
 			isa = PBXGroup;
 			children = (
+				95F10F8022AB3B2B00FB5BB9 /* Public */,
 				952112DF22A256E400F31FB7 /* 购物 */,
 				95219BE62288138E00348678 /* Basic */,
 				950A86F2226B1EDD00785130 /* Home */,
@@ -129,8 +138,10 @@
 		950A86F2226B1EDD00785130 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				953A4F3122BF65EC005F6826 /* View */,
 				952112E022A256FC00F31FB7 /* CHHomeViewController.h */,
 				952112E122A256FC00F31FB7 /* CHHomeViewController.m */,
+				953A4F2F22BF659C005F6826 /* HomeMedia.xcassets */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -193,6 +204,17 @@
 			path = Basic;
 			sourceTree = "<group>";
 		};
+		953A4F3122BF65EC005F6826 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				953A4F3222BF65FD005F6826 /* CHHomeNavView.h */,
+				953A4F3322BF65FD005F6826 /* CHHomeNavView.m */,
+				958EAEEA22C78EC1007BAB43 /* CHHomeTableViewCell.h */,
+				958EAEEB22C78EC1007BAB43 /* CHHomeTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		95451887227C813E009BD13C /* launch */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +224,13 @@
 				95349E2F2286774900CD152C /* CHLaunchViewController.m */,
 			);
 			path = launch;
+			sourceTree = "<group>";
+		};
+		95F10F8022AB3B2B00FB5BB9 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		D7CF967D390DE6FF179BDACB /* Pods */ = {
@@ -273,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95451885227C8113009BD13C /* launch_gif.gif in Resources */,
+				953A4F3022BF659C005F6826 /* HomeMedia.xcassets in Resources */,
 				952112D722A179EF00F31FB7 /* Login.xcassets in Resources */,
 				95451886227C8113009BD13C /* app_launch_sound.mp3 in Resources */,
 				950A86E8226A21DE00785130 /* LaunchScreen.storyboard in Resources */,
@@ -311,18 +341,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheLiang/Pods-CheLiang-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/CHTabBarController/CHTabBarController.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/LaunchGif/LaunchGif.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-CheLiang/Pods-CheLiang-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CHTabBarController.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LaunchGif.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-CheLiang/Pods-CheLiang-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -340,8 +363,10 @@
 				950A86E0226A21DE00785130 /* ViewController.m in Sources */,
 				95219BE9228813A100348678 /* CHBaseViewController.m in Sources */,
 				95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */,
+				958EAEEC22C78EC1007BAB43 /* CHHomeTableViewCell.m in Sources */,
 				952112E522A2571C00F31FB7 /* CHPurchaseViewController.m in Sources */,
 				952112DE22A20A9900F31FB7 /* CHUserManager.m in Sources */,
+				953A4F3422BF65FD005F6826 /* CHHomeNavView.m in Sources */,
 				950A86EB226A21DE00785130 /* main.m in Sources */,
 				95219BEC228813B400348678 /* CHLoginViewController.m in Sources */,
 				95349E302286774900CD152C /* CHLaunchViewController.m in Sources */,
@@ -490,7 +515,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lichanghong;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheliang.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,7 +536,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lichanghong;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheliang.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -7,7 +7,6 @@
 //
 
 #import "CHWeChatManager.h"
-#import <AFNetworking/AFNetworking.h>
 
 NSString * const WXAppId = @"wx354ff2b9df7cf4ac";
 NSString * const WXAppSecret = @"24999d4a75a3566b6161928821c55b27";
@@ -86,18 +85,18 @@ static CHWeChatManager *sharedInstance = nil;
 
 -(void)requestForUserInfoWithCode:(NSString *)code
 {
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObjects:@"application/json", @"text/json", @"text/plain", nil];
-    NSString *url = @"http://39.106.228.230/car-api/api/login";
-    [manager POST:url parameters:@{@"loginType":@"0",@"code":code} progress:^(NSProgress * _Nonnull uploadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@",responseObject);
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@",error);
-        
-    }];
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    manager.responseSerializer.acceptableContentTypes =  [NSSet setWithObjects:@"application/json", @"text/json", @"text/plain", nil];
+//    NSString *url = @"http://39.106.228.230/car-api/api/login";
+//    [manager POST:url parameters:@{@"loginType":@"0",@"code":code} progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"%@",responseObject);
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"%@",error);
+//        
+//    }];
     
 }
 
