@@ -48,7 +48,7 @@ static CHLoginManager *sharedInstance = nil;
 
 - (BOOL)isWXAppInstalled
 {
-    return [WXApi isWXAppInstalled];
+    return true;[WXApi isWXAppInstalled];
 }
 
 @end

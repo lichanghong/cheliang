@@ -21,6 +21,7 @@ PODS:
   - ETEntity (0.1.1):
     - YYModel (= 1.0.4)
   - ETFont (0.1.0)
+  - ETGesture (0.1.0)
   - ETNetwork (0.1.5):
     - ETSafe
     - ETXMNetworking
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - ETColor
   - ETDevice
   - ETFont
+  - ETGesture
   - ETSDWebImage
   - ETString
   - ETTableViewCell
@@ -61,6 +63,7 @@ SPEC REPOS:
     - ETDevice
     - ETEntity
     - ETFont
+    - ETGesture
     - ETNetwork
     - ETSafe
     - ETSDWebImage
@@ -90,6 +93,7 @@ SPEC CHECKSUMS:
   ETDevice: c27cd1618b94ea8a5a261a5fd6e99acc8e4154c5
   ETEntity: ecd5932de041042a198bc30af7ff6859fa70008f
   ETFont: e211cee05390e6cf93b8f035423e2063196c8816
+  ETGesture: 22fde18e0b9e4b44257fd9600fb771aebecc9228
   ETNetwork: dea0154dc2765ac9a3b500ac5f7005a6946c151e
   ETSafe: 026ffa41744be8183a78fe7753b75c7131982fde
   ETSDWebImage: 80f53c00dc046d045881ba7247b034305273d384
@@ -102,6 +106,6 @@ SPEC CHECKSUMS:
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 203a313c66f398dd44a01be343a4406946cb7769
+PODFILE CHECKSUM: fb22c17e22823018520a541d7ffd2bfefe236663
 
 COCOAPODS: 1.7.2

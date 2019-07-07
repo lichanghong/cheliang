@@ -22,7 +22,7 @@ static CHUserManager * instance;
 
 - (BOOL)hasLoginedIn
 {
-    return NO;
+    return YES;
 }
 
 @end

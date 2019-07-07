@@ -29,19 +29,20 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [[CHRouter sharedInstance] registerAllModules];    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    CHLaunchViewController *launchVC = [[CHLaunchViewController alloc]init];
+//    CHLaunchViewController *launchVC = [[CHLaunchViewController alloc]init];
+//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:launchVC];
+//    nav.navigationBar.hidden = YES;
     __weak typeof(self) weakSelf = self;
-//
+
 //    launchVC.dismiss = ^{
         [weakSelf launchVCDismiss];
 //    };
-//    self.window.rootViewController = launchVC;
+//    self.window.rootViewController = nav;
 //    [self.window makeKeyAndVisible];
-//
-//    NSLog(@"nav");
+
+    NSLog(@"nav");
     return YES;
 }
 
@@ -50,15 +51,15 @@
     [tabbarC tabBarControllerCls:@[CHHomeViewController.class,
                                    CHBaseViewController.class,
                                    CHPurchaseViewController.class] NavCls:UINavigationController.class];
-    self.window.rootViewController = tabbarC;
+    UINavigationController *rootNav = [[UINavigationController alloc]initWithRootViewController:tabbarC];
+    rootNav.navigationBar.hidden = YES;
+    self.window.rootViewController = rootNav;
     [self.window makeKeyAndVisible];
-    
-    if ([[CHUserManager sharedInstance] hasLoginedIn]) { //！logined
-        CHLoginViewController *vc  = [[CHLoginViewController alloc]init];
-        [self.window.rootViewController presentViewController:vc animated:NO completion:^{
-                                      }];
-    }
-    
+//    
+//    if ([[CHUserManager sharedInstance] hasLoginedIn]) { //！logined
+//        CHLoginViewController *vc  = [[CHLoginViewController alloc]init];
+//        [rootNav pushViewController:vc animated:NO];
+//    }
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {

@@ -8,10 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, CHHomeNavViewActionType) {
+    CHHomeNavViewActionType_left,
+    CHHomeNavViewActionType_right
+};
+@protocol CHHomeNavViewDelegate <NSObject>
+
+- (void)CHHomeNavViewActionType:(CHHomeNavViewActionType)type;
+
+@end
+
 
 @interface CHHomeNavView : UIView
 
 + (instancetype)createNavView;
+@property (nonatomic,weak)id<CHHomeNavViewDelegate>delegate;
 
 @property (nonatomic,strong)UIButton *leftBtn;
 @property (nonatomic,strong)UILabel *centerLabel;

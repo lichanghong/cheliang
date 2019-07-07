@@ -36,7 +36,14 @@
 }
 
 - (void)handleAction:(id)sender {
-    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(CHHomeNavViewActionType:)]) {
+        if (sender == self.leftBtn) {
+            [self.delegate CHHomeNavViewActionType:CHHomeNavViewActionType_left];
+        }
+        else if (sender == self.rightBtn) {
+            [self.delegate CHHomeNavViewActionType:CHHomeNavViewActionType_right];
+        }
+    }
 }
 
 - (UIButton *)leftBtn

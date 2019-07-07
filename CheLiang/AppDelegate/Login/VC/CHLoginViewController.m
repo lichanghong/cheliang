@@ -9,6 +9,7 @@
 #import "CHLoginViewController.h"
 #import <ETDevice/ETDevice.h>
 #import "CHLoginManager.h"
+#import "CHIphoneLoginVC.h"
 
 @interface CHLoginViewController ()
 
@@ -62,16 +63,18 @@
 }
 
 - (void)handleAction:(id)sender {
-//    if (sender == _loginBtn1) {
+    if (sender == _loginBtn1) {
+        CHIphoneLoginVC *loginVC = [[CHIphoneLoginVC alloc]init];
+        [self.navigationController pushViewController:loginVC animated:NO];
 //        [[CHLoginManager sharedInstance] appLogin:WeChatLoginType withUserName:nil withPassword:nil];;
-//    }
+    }
 //    else if (sender == _loginBtn2 || sender == _loginBtn3)
 //    {
 //        [[CHLoginManager sharedInstance] appLogin:QQLoginType withUserName:nil withPassword:nil];;
 //    }
 //    else
 //    {
-        [self dismissViewControllerAnimated:NO completion:nil];
+//        [self dismissViewControllerAnimated:NO completion:nil];
 //    }
     
     
@@ -111,7 +114,7 @@
 {
     if (!_loginBtn1) {
         UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(43*ratio, 0, 128*ratio, 43*ratio)];
-        [btn setImage:[UIImage imageNamed:@"log_qq"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"log_wechat"] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(handleAction:) forControlEvents:UIControlEventTouchUpInside];
         _loginBtn1 = btn;
     }

@@ -17,7 +17,7 @@ target 'CheLiang' do
    pod 'ETSDWebImage'
    pod 'ETTableViewCell'
    pod 'ETString'
-   
+   pod 'ETGesture'
    pod 'MNet'
    # 本地pod库 二进制化
    pod 'CHNavigationController', :path => '../pod/CHNavigationController/CHNavigationController-0.1.1/'

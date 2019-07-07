@@ -26,6 +26,13 @@
 		953A4F3422BF65FD005F6826 /* CHHomeNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 953A4F3322BF65FD005F6826 /* CHHomeNavView.m */; };
 		95451885227C8113009BD13C /* launch_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 95451883227C8113009BD13C /* launch_gif.gif */; };
 		95451886227C8113009BD13C /* app_launch_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95451884227C8113009BD13C /* app_launch_sound.mp3 */; };
+		9573B97A22D1AC8A00D59E22 /* CHMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573B97922D1AC8A00D59E22 /* CHMineViewController.m */; };
+		9573B97E22D1ADCB00D59E22 /* CHMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573B97D22D1ADCB00D59E22 /* CHMineTableViewCell.m */; };
+		9573B98122D1B22100D59E22 /* CHMineHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9573B98022D1B22100D59E22 /* CHMineHeader.m */; };
+		958D7E8A22CF8D1200B773AE /* CHArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D7E8922CF8D1200B773AE /* CHArticleViewController.m */; };
+		958D7E8E22CF8DD600B773AE /* CHArticleNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D7E8D22CF8DD600B773AE /* CHArticleNavBar.m */; };
+		958D7E9122CF901F00B773AE /* CHBaseNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D7E9022CF901F00B773AE /* CHBaseNavBar.m */; };
+		958D7E9422CF920B00B773AE /* CHIphoneLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D7E9322CF920B00B773AE /* CHIphoneLoginVC.m */; };
 		958EAEEC22C78EC1007BAB43 /* CHHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 958EAEEB22C78EC1007BAB43 /* CHHomeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +69,20 @@
 		953A4F3322BF65FD005F6826 /* CHHomeNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHomeNavView.m; sourceTree = "<group>"; };
 		95451883227C8113009BD13C /* launch_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = launch_gif.gif; sourceTree = "<group>"; };
 		95451884227C8113009BD13C /* app_launch_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = app_launch_sound.mp3; sourceTree = "<group>"; };
+		9573B97822D1AC8A00D59E22 /* CHMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMineViewController.h; sourceTree = "<group>"; };
+		9573B97922D1AC8A00D59E22 /* CHMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHMineViewController.m; sourceTree = "<group>"; };
+		9573B97C22D1ADCB00D59E22 /* CHMineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMineTableViewCell.h; sourceTree = "<group>"; };
+		9573B97D22D1ADCB00D59E22 /* CHMineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHMineTableViewCell.m; sourceTree = "<group>"; };
+		9573B97F22D1B22100D59E22 /* CHMineHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHMineHeader.h; sourceTree = "<group>"; };
+		9573B98022D1B22100D59E22 /* CHMineHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHMineHeader.m; sourceTree = "<group>"; };
+		958D7E8822CF8D1200B773AE /* CHArticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHArticleViewController.h; sourceTree = "<group>"; };
+		958D7E8922CF8D1200B773AE /* CHArticleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHArticleViewController.m; sourceTree = "<group>"; };
+		958D7E8C22CF8DD600B773AE /* CHArticleNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHArticleNavBar.h; sourceTree = "<group>"; };
+		958D7E8D22CF8DD600B773AE /* CHArticleNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHArticleNavBar.m; sourceTree = "<group>"; };
+		958D7E8F22CF901F00B773AE /* CHBaseNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHBaseNavBar.h; sourceTree = "<group>"; };
+		958D7E9022CF901F00B773AE /* CHBaseNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHBaseNavBar.m; sourceTree = "<group>"; };
+		958D7E9222CF920B00B773AE /* CHIphoneLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHIphoneLoginVC.h; sourceTree = "<group>"; };
+		958D7E9322CF920B00B773AE /* CHIphoneLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHIphoneLoginVC.m; sourceTree = "<group>"; };
 		958EAEEA22C78EC1007BAB43 /* CHHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHHomeTableViewCell.h; sourceTree = "<group>"; };
 		958EAEEB22C78EC1007BAB43 /* CHHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHHomeTableViewCell.m; sourceTree = "<group>"; };
 		D53C8A06288742BE3BC1F496 /* libPods-CheLiang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CheLiang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +130,8 @@
 		950A86DA226A21DE00785130 /* CheLiang */ = {
 			isa = PBXGroup;
 			children = (
+				9573B97722D1AC6E00D59E22 /* 我的 */,
+				958D7E8722CF8CA600B773AE /* 小文章 */,
 				95F10F8022AB3B2B00FB5BB9 /* Public */,
 				952112DF22A256E400F31FB7 /* 购物 */,
 				95219BE62288138E00348678 /* Basic */,
@@ -191,6 +214,8 @@
 			children = (
 				95219BEA228813B400348678 /* CHLoginViewController.h */,
 				95219BEB228813B400348678 /* CHLoginViewController.m */,
+				958D7E9222CF920B00B773AE /* CHIphoneLoginVC.h */,
+				958D7E9322CF920B00B773AE /* CHIphoneLoginVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -200,6 +225,8 @@
 			children = (
 				95219BE7228813A100348678 /* CHBaseViewController.h */,
 				95219BE8228813A100348678 /* CHBaseViewController.m */,
+				958D7E8F22CF901F00B773AE /* CHBaseNavBar.h */,
+				958D7E9022CF901F00B773AE /* CHBaseNavBar.m */,
 			);
 			path = Basic;
 			sourceTree = "<group>";
@@ -224,6 +251,46 @@
 				95349E2F2286774900CD152C /* CHLaunchViewController.m */,
 			);
 			path = launch;
+			sourceTree = "<group>";
+		};
+		9573B97722D1AC6E00D59E22 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				9573B97B22D1AD8E00D59E22 /* View */,
+				9573B97822D1AC8A00D59E22 /* CHMineViewController.h */,
+				9573B97922D1AC8A00D59E22 /* CHMineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		9573B97B22D1AD8E00D59E22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9573B97C22D1ADCB00D59E22 /* CHMineTableViewCell.h */,
+				9573B97D22D1ADCB00D59E22 /* CHMineTableViewCell.m */,
+				9573B97F22D1B22100D59E22 /* CHMineHeader.h */,
+				9573B98022D1B22100D59E22 /* CHMineHeader.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		958D7E8722CF8CA600B773AE /* 小文章 */ = {
+			isa = PBXGroup;
+			children = (
+				958D7E8B22CF8DC300B773AE /* view */,
+				958D7E8822CF8D1200B773AE /* CHArticleViewController.h */,
+				958D7E8922CF8D1200B773AE /* CHArticleViewController.m */,
+			);
+			path = "小文章";
+			sourceTree = "<group>";
+		};
+		958D7E8B22CF8DC300B773AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				958D7E8C22CF8DD600B773AE /* CHArticleNavBar.h */,
+				958D7E8D22CF8DD600B773AE /* CHArticleNavBar.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		95F10F8022AB3B2B00FB5BB9 /* Public */ = {
@@ -359,16 +426,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958D7E8A22CF8D1200B773AE /* CHArticleViewController.m in Sources */,
 				95219BE3228811FC00348678 /* CHLoginManager.m in Sources */,
 				950A86E0226A21DE00785130 /* ViewController.m in Sources */,
 				95219BE9228813A100348678 /* CHBaseViewController.m in Sources */,
 				95219BE2228811FC00348678 /* CHWeChatManager.m in Sources */,
+				958D7E8E22CF8DD600B773AE /* CHArticleNavBar.m in Sources */,
+				9573B98122D1B22100D59E22 /* CHMineHeader.m in Sources */,
 				958EAEEC22C78EC1007BAB43 /* CHHomeTableViewCell.m in Sources */,
 				952112E522A2571C00F31FB7 /* CHPurchaseViewController.m in Sources */,
 				952112DE22A20A9900F31FB7 /* CHUserManager.m in Sources */,
+				9573B97E22D1ADCB00D59E22 /* CHMineTableViewCell.m in Sources */,
+				958D7E9122CF901F00B773AE /* CHBaseNavBar.m in Sources */,
+				9573B97A22D1AC8A00D59E22 /* CHMineViewController.m in Sources */,
 				953A4F3422BF65FD005F6826 /* CHHomeNavView.m in Sources */,
 				950A86EB226A21DE00785130 /* main.m in Sources */,
 				95219BEC228813B400348678 /* CHLoginViewController.m in Sources */,
+				958D7E9422CF920B00B773AE /* CHIphoneLoginVC.m in Sources */,
 				95349E302286774900CD152C /* CHLaunchViewController.m in Sources */,
 				952112E222A256FC00F31FB7 /* CHHomeViewController.m in Sources */,
 				950A86DD226A21DE00785130 /* AppDelegate.m in Sources */,
@@ -508,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J9GZXLFK2X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/CheLiang/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J9GZXLFK2X;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/CheLiang/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (

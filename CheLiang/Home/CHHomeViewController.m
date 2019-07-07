@@ -14,9 +14,12 @@
 #import <ETSafe/ETSafe.h>
 #import <MNet/MNet.h>
 #import "CHHomeTableViewCell.h"
+#import "CHArticleViewController.h"
+#import "CHMineViewController.h"
 
 
-@interface CHHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface CHHomeViewController ()
+<UITableViewDelegate,UITableViewDataSource,CHHomeNavViewDelegate>
 @property (nonatomic,strong)CHHomeNavView *navBar;
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,copy)NSArray <MGetMainPageInfoModel*> *pageInfos;
@@ -25,6 +28,11 @@
 
 @implementation CHHomeViewController
 //NSDictionary *params = @{@"mobile":@"17737062865",@"password":@"123456"};
+
+- (void)dealloc
+{
+    NSLog(@"%@ dealloc.....",NSStringFromClass(self.class));
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,17 +47,22 @@
 
 - (void)loadData {
     __weak typeof(self)wself = self;
-//    [MLoginModel loginWithMobile:@"17737062865" Passwork:@"123456" success:^{
-//
-//    } failure:^(NSString *errDesc) {
-//
-//    }];
     [MGetMainPageInfoModel getMainPageInfoWithPageID:@"0" success:^(NSArray * _Nonnull infoModels) {
         wself.pageInfos = infoModels;
         [wself.tableView reloadData];
     } failure:^(NSString * _Nonnull errDesc) {
         
     }];
+}
+
+#pragma mark CHHomeNavViewDelegate
+- (void)CHHomeNavViewActionType:(CHHomeNavViewActionType)type
+{
+    if (type == CHHomeNavViewActionType_right) {
+        CHMineViewController *minevc = [CHMineViewController new];
+        UINavigationController *nav = (UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController;
+        [nav pushViewController:minevc animated:YES];
+    }
 }
 
 #pragma mark tableview delegate datasource
@@ -77,9 +90,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSString *clsStr = [NSString stringWithFormat:@"KDViewController%ld",(long)indexPath.row];
-    Class cls = NSClassFromString(clsStr);
-    [self.navigationController pushViewController:[[cls alloc]init] animated:YES];
+    CHArticleViewController *vc = [[CHArticleViewController alloc]init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableView *)tableView
@@ -98,6 +111,8 @@
 {
     if (!_navBar) {
         _navBar = [CHHomeNavView createNavView];
+        _navBar.frame = CGRectMake(0, 0, kScreenWidth(), kNavigationBarHeight());
+        _navBar.delegate = self;
     }
     return _navBar;
 }

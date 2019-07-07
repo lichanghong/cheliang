@@ -14,9 +14,11 @@
 #import <ETSafe/ETSafe.h>
 #import <MNet/MNet.h>
 #import "CHHomeTableViewCell.h"
+#import "CHMineViewController.h"
 
 
-@interface CHPurchaseViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface CHPurchaseViewController ()
+<UICollectionViewDelegate,UICollectionViewDataSource,CHHomeNavViewDelegate>
 @property (nonatomic,strong)CHHomeNavView *navBar;
 @property (nonatomic,strong)UICollectionView *collectionView;
 
@@ -33,6 +35,16 @@
     self.navBar.centerLabel.text = @"购物";
     [self.collectionView registerClass:UICollectionViewCell.class forCellWithReuseIdentifier:NSStringFromClass(UICollectionViewCell.class)];
     // Do any additional setup after loading the view.
+}
+
+#pragma mark CHHomeNavViewDelegate
+- (void)CHHomeNavViewActionType:(CHHomeNavViewActionType)type
+{
+    if (type == CHHomeNavViewActionType_right) {
+        CHMineViewController *minevc = [CHMineViewController new];
+        UINavigationController *nav = (UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController;
+        [nav pushViewController:minevc animated:YES];
+    }
 }
 
 - (NSInteger ) numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -68,6 +80,7 @@
 {
     if (!_navBar) {
         _navBar = [CHHomeNavView createNavView];
+        _navBar.delegate = self;
     }
     return _navBar;
 }
